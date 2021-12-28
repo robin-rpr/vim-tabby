@@ -68,9 +68,9 @@ endif
 
 let s:cdNone = {'gui': 'NONE', 'cterm': 'NONE', 'cterm256': 'NONE'}
 let s:cdFront = {'gui': '#D4D4D4', 'cterm': s:cterm05, 'cterm256': '188'}
-let s:cdBack = {'gui': '#222a33', 'cterm': s:cterm00, 'cterm256': '234'}
+let s:cdBack = {'gui': '#222A33', 'cterm': s:cterm00, 'cterm256': '234'}
 
-let s:cdTabCurrent = {'gui': '#222a33', 'cterm': s:cterm00, 'cterm256': '234'}
+let s:cdTabCurrent = {'gui': '#222A33', 'cterm': s:cterm00, 'cterm256': '234'}
 let s:cdTabOther = {'gui': '#2D2D2D', 'cterm': s:cterm01, 'cterm256': '236'}
 let s:cdTabOutside = {'gui': '#252526', 'cterm': s:cterm01, 'cterm256': '235'}
 
