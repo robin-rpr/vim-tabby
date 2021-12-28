@@ -1,5 +1,6 @@
-" Vim Code Dark (color scheme)
-" https://github.com/tomasiser/vim-code-dark
+" Vim Tabby (color scheme)
+" https://github.com/robin-rpr/vim-tabby
+" Credit: https://github.com/tomasiser/vim-code-dark
 
 scriptencoding utf-8
 
@@ -8,20 +9,20 @@ hi clear
 if exists("syntax_on")
     syntax reset
 endif
-let g:colors_name="codedark"
+let g:colors_name="tabby"
 
 " Highlighting function (inspiration from https://github.com/chriskempson/base16-vim)
 if &t_Co >= 256
-    let g:codedark_term256=1
-elseif !exists("g:codedark_term256")
-    let g:codedark_term256=0
+    let g:tabby_term256=1
+elseif !exists("g:tabby_term256")
+    let g:tabby_term256=0
 endif
 fun! <sid>hi(group, fg, bg, attr, sp)
   if !empty(a:fg)
-    exec "hi " . a:group . " guifg=" . a:fg.gui . " ctermfg=" . (g:codedark_term256 ? a:fg.cterm256 : a:fg.cterm)
+    exec "hi " . a:group . " guifg=" . a:fg.gui . " ctermfg=" . (g:tabby_term256 ? a:fg.cterm256 : a:fg.cterm)
   endif
   if !empty(a:bg)
-    exec "hi " . a:group . " guibg=" . a:bg.gui . " ctermbg=" . (g:codedark_term256 ? a:bg.cterm256 : a:bg.cterm)
+    exec "hi " . a:group . " guibg=" . a:bg.gui . " ctermbg=" . (g:tabby_term256 ? a:bg.cterm256 : a:bg.cterm)
   endif
   if a:attr != ""
     exec "hi " . a:group . " gui=" . a:attr . " cterm=" . a:attr
@@ -103,13 +104,13 @@ let s:cdSearch = {'gui': '#264F78', 'cterm': s:cterm03, 'cterm256': '24'}
 
 " Syntax colors:
 
-if !exists("g:codedark_conservative")
-    let g:codedark_conservative=0
+if !exists("g:tabby_conservative")
+    let g:tabby_conservative=0
 endif
 
 " Italicized comments
-if !exists("g:codedark_italics")
-    let g:codedark_italics=0
+if !exists("g:tabby_italics")
+    let g:tabby_italics=0
 endif
 
 let s:cdGray = {'gui': '#808080', 'cterm': s:cterm04, 'cterm256': '08'}
@@ -117,19 +118,19 @@ let s:cdViolet = {'gui': '#646695', 'cterm': s:cterm04, 'cterm256': '60'}
 let s:cdBlue = {'gui': '#569CD6', 'cterm': s:cterm0D, 'cterm256': '75'}
 let s:cdDarkBlue = {'gui': '#223E55', 'cterm': s:cterm0D, 'cterm256': '73'}
 let s:cdLightBlue = {'gui': '#9CDCFE', 'cterm': s:cterm0C, 'cterm256': '117'}
-if g:codedark_conservative | let s:cdLightBlue = s:cdFront | endif
+if g:tabby_conservative | let s:cdLightBlue = s:cdFront | endif
 let s:cdGreen = {'gui': '#6A9955', 'cterm': s:cterm0B, 'cterm256': '65'}
 let s:cdBlueGreen = {'gui': '#4EC9B0', 'cterm': s:cterm0F, 'cterm256': '43'}
 let s:cdLightGreen = {'gui': '#B5CEA8', 'cterm': s:cterm09, 'cterm256': '151'}
 let s:cdRed = {'gui': '#F44747', 'cterm': s:cterm08, 'cterm256': '203'}
 let s:cdOrange = {'gui': '#CE9178', 'cterm': s:cterm0F, 'cterm256': '173'}
 let s:cdLightRed = {'gui': '#D16969', 'cterm': s:cterm08, 'cterm256': '167'}
-if g:codedark_conservative | let s:cdLightRed = s:cdOrange | endif
+if g:tabby_conservative | let s:cdLightRed = s:cdOrange | endif
 let s:cdYellowOrange = {'gui': '#D7BA7D', 'cterm': s:cterm0A, 'cterm256': '179'}
 let s:cdYellow = {'gui': '#DCDCAA', 'cterm': s:cterm0A, 'cterm256': '187'}
-if g:codedark_conservative | let s:cdYellow = s:cdFront | endif
+if g:tabby_conservative | let s:cdYellow = s:cdFront | endif
 let s:cdPink = {'gui': '#C586C0', 'cterm': s:cterm0E, 'cterm256': '176'}
-if g:codedark_conservative | let s:cdPink = s:cdBlue | endif
+if g:tabby_conservative | let s:cdPink = s:cdBlue | endif
 let s:cdSilver = {'gui': '#C0C0C0', 'cterm': s:cterm05, 'cterm256': '7'}
 
 " Vim editor colors
@@ -180,7 +181,7 @@ hi! link diffAdded DiffAdd
 hi! link diffChanged DiffChange
 hi! link diffRemoved DiffDelete
 
-if g:codedark_italics | call <sid>hi('Comment', s:cdGreen, {}, 'italic', {}) | else | call <sid>hi('Comment', s:cdGreen, {}, 'none', {}) | endif
+if g:tabby_italics | call <sid>hi('Comment', s:cdGreen, {}, 'italic', {}) | else | call <sid>hi('Comment', s:cdGreen, {}, 'none', {}) | endif
 
 call <sid>hi('Constant', s:cdBlue, {}, 'none', {})
 call <sid>hi('String', s:cdOrange, {}, 'none', {})
@@ -215,7 +216,7 @@ call <sid>hi('Special', s:cdYellowOrange, {}, 'none', {})
 call <sid>hi('SpecialChar', s:cdFront, {}, 'none', {})
 call <sid>hi('Tag', s:cdFront, {}, 'none', {})
 call <sid>hi('Delimiter', s:cdFront, {}, 'none', {})
-if g:codedark_italics | call <sid>hi('SpecialComment', s:cdGreen, {}, 'italic', {}) | else | call <sid>hi('SpecialComment', s:cdGreen, {}, 'none', {}) | endif
+if g:tabby_italics | call <sid>hi('SpecialComment', s:cdGreen, {}, 'italic', {}) | else | call <sid>hi('SpecialComment', s:cdGreen, {}, 'none', {}) | endif
 call <sid>hi('Debug', s:cdFront, {}, 'none', {})
 
 call <sid>hi('Underlined', s:cdNone, {}, 'underline', {})
