@@ -50,8 +50,8 @@ let s:cdYellow = {'gui': '#FFAF00', 'cterm': (g:tabby_term256 ? '214' : s:cterm0
 let s:cdRed = {'gui': '#F44747', 'cterm': (g:tabby_term256 ? '203' : s:cterm08)}
 
 let s:cdDarkDarkDark = {'gui': '#232A32', 'cterm': (g:tabby_term256 ? '235' : s:cterm01)}
-let s:cdDarkDark = {'gui': '#303030', 'cterm': (g:tabby_term256 ? '236' : s:cterm02)}
-let s:cdDark = {'gui': '#3C3C3C', 'cterm': (g:tabby_term256 ? '237' : s:cterm03)}
+let s:cdDarkDark = {'gui': '#232A32', 'cterm': (g:tabby_term256 ? '236' : s:cterm02)}
+let s:cdDark = {'gui': '#232A32', 'cterm': (g:tabby_term256 ? '237' : s:cterm03)}
 
 let s:Warning = [ s:cdRed.gui, s:cdDarkDark.gui, s:cdRed.cterm, s:cdDarkDark.cterm, 'none']
 
