@@ -72,7 +72,7 @@ let s:cdBack = {'gui': '#222A33', 'cterm': s:cterm00, 'cterm256': '234'}
 
 let s:cdTabCurrent = {'gui': '#222A33', 'cterm': s:cterm00, 'cterm256': '234'}
 let s:cdTabOther = {'gui': '#2D2D2D', 'cterm': s:cterm01, 'cterm256': '236'}
-let s:cdTabOutside = {'gui': '#000000', 'cterm': s:cterm01, 'cterm256': '235'}
+let s:cdTabOutside = {'gui': '#232A32', 'cterm': s:cterm01, 'cterm256': '235'}
 
 let s:cdLeftDark = {'gui': '#232A32', 'cterm': s:cterm01, 'cterm256': '235'}
 let s:cdLeftMid = {'gui': '#232A32', 'cterm': s:cterm03, 'cterm256': '237'}
