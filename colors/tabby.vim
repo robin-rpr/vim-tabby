@@ -72,10 +72,10 @@ let s:cdBack = {'gui': '#222A33', 'cterm': s:cterm00, 'cterm256': '234'}
 
 let s:cdTabCurrent = {'gui': '#222A33', 'cterm': s:cterm00, 'cterm256': '234'}
 let s:cdTabOther = {'gui': '#2D2D2D', 'cterm': s:cterm01, 'cterm256': '236'}
-let s:cdTabOutside = {'gui': '#2D323B', 'cterm': s:cterm01, 'cterm256': '235'}
+let s:cdTabOutside = {'gui': '#232A32', 'cterm': s:cterm01, 'cterm256': '235'}
 
-let s:cdLeftDark = {'gui': '#2D323B', 'cterm': s:cterm01, 'cterm256': '235'}
-let s:cdLeftMid = {'gui': '#2D323B', 'cterm': s:cterm03, 'cterm256': '237'}
+let s:cdLeftDark = {'gui': '#232A32', 'cterm': s:cterm01, 'cterm256': '235'}
+let s:cdLeftMid = {'gui': '#232A32', 'cterm': s:cterm03, 'cterm256': '237'}
 let s:cdLeftLight = {'gui': '#3F3F46', 'cterm': s:cterm03, 'cterm256': '238'}
 
 let s:cdPopupFront = {'gui': '#BBBBBB', 'cterm': s:cterm06, 'cterm256': '250'}
@@ -84,7 +84,7 @@ let s:cdPopupHighlightBlue = {'gui': '#073655', 'cterm': s:cterm0D, 'cterm256': 
 let s:cdPopupHighlightGray = {'gui': '#3D3D40', 'cterm': s:cterm03, 'cterm256': '237'}
 
 let s:cdSplitLight = {'gui': '#898989', 'cterm': s:cterm04, 'cterm256': '245'}
-let s:cdSplitDark = {'gui': '#2D323B', 'cterm': s:cterm03, 'cterm256': '238'}
+let s:cdSplitDark = {'gui': '#232A32', 'cterm': s:cterm03, 'cterm256': '238'}
 let s:cdSplitThumb = {'gui': '#424242', 'cterm': s:cterm04, 'cterm256': '238'}
 
 let s:cdCursorDarkDark = {'gui': '#232A32', 'cterm': s:cterm01, 'cterm256': '235'}
